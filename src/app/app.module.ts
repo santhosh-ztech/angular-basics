@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PageRouteingModule } from './pages/page-routeing.module';
 import { SharedModuleModule } from './shared-module/shared-module.module';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { SharedModuleModule } from './shared-module/shared-module.module';
     IonicModule.forRoot(),
     AppRoutingModule,
     SharedModuleModule,
+    PageRouteingModule,
   ],
   providers: [
     StatusBar,

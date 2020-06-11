@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { CardComponent } from './components/card/card.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -7,7 +8,7 @@ import { SideMenuHeaderComponent } from './components/side-menu/header/header.co
 import { SideMenuItemsComponent } from './components/side-menu/items/items.component';
 
 @NgModule({
-  imports: [CommonModule, IonicModule],
+  imports: [CommonModule, IonicModule, RouterModule],
   declarations: [
     CardComponent,
     HeaderComponent,

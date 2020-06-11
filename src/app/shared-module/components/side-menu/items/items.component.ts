@@ -10,9 +10,11 @@ export class SideMenuItemsComponent implements OnInit {
   menuItems: MenuItem[] = [
     {
       label: 'Introduction',
+      link: '/',
     },
     {
       label: 'Event & User Input Bindings',
+      link: '/user-inputs',
     },
   ];
   constructor() {}

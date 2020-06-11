@@ -2,8 +2,8 @@
   <ion-item
     *ngFor="let menuItem of menuItems"
     class="menu-item"
-    href="{{ menuItem.link ? menuItem.link : '#' }}"
     target="{{ menuItem.external ? '_blank' : '_self' }}"
+    routerLink="{{ menuItem.link ? menuItem.link : '#' }}"
   >
     <ion-label>
       {{ menuItem.label }}
