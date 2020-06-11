@@ -1,0 +1,22 @@
+<ion-header class="page-header">
+  <ion-toolbar color="dark">
+    <ul class="header">
+      <li class="logo">
+        <ion-img class="logo-img" src="/assets/icon/favicon.webp"></ion-img>
+        <ion-title class="fw-bold title">Angular Basics</ion-title>
+      </li>
+      <li *ngFor="let headerItem of headerItems" class="ion-hide-md-down">
+        <a
+          href="{{ headerItem.link ? headerItem.link : '#' }}"
+          target="{{ headerItem.external ? '_blank' : '_self' }}"
+        >
+          <ion-title>{{ headerItem.label }}</ion-title>
+        </a>
+      </li>
+    </ul>
+    <!-- Side Menu Button -->
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

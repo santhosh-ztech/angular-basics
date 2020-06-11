@@ -1,0 +1,32 @@
+.page-header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0 10px;
+  li {
+    align-items: center;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+  // Logo Styling.
+  .logo {
+    padding: 0 10px;
+    display: flex;
+    .logo-img {
+      width: 40px;
+    }
+    .title {
+      padding: 0 10px;
+    }
+  }
+}

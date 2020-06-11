@@ -1,0 +1,12 @@
+<ion-list>
+  <ion-item
+    *ngFor="let menuItem of menuItems"
+    class="menu-item"
+    href="{{ menuItem.link ? menuItem.link : '#' }}"
+    target="{{ menuItem.external ? '_blank' : '_self' }}"
+  >
+    <ion-label>
+      {{ menuItem.label }}
+    </ion-label>
+  </ion-item>
+</ion-list>

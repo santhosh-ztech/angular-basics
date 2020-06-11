@@ -1,3 +1,20 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <app-header></app-header>
+  <ion-split-pane contentId="main">
+    <!-- Side Menu -->
+    <ion-menu contentId="main">
+      <!-- Header -->
+      <ion-header>
+        <app-side-menu-header></app-side-menu-header>
+      </ion-header>
+
+      <!-- Content -->
+      <ion-content>
+        <app-side-menu-items></app-side-menu-items>
+      </ion-content>
+    </ion-menu>
+
+    <!-- Main Content -->
+    <ion-router-outlet id="main"></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>
