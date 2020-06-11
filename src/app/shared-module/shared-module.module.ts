@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { CardComponent } from './components/card/card.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SideMenuHeaderComponent } from './components/side-menu/header/header.component';
 import { SideMenuItemsComponent } from './components/side-menu/items/items.component';
@@ -8,10 +9,16 @@ import { SideMenuItemsComponent } from './components/side-menu/items/items.compo
 @NgModule({
   imports: [CommonModule, IonicModule],
   declarations: [
+    CardComponent,
     HeaderComponent,
     SideMenuHeaderComponent,
     SideMenuItemsComponent,
   ],
-  exports: [HeaderComponent, SideMenuHeaderComponent, SideMenuItemsComponent],
+  exports: [
+    CardComponent,
+    HeaderComponent,
+    SideMenuHeaderComponent,
+    SideMenuItemsComponent,
+  ],
 })
 export class SharedModuleModule {}

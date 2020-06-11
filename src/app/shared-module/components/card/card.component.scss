@@ -1,0 +1,12 @@
+.card-content {
+  color: #000000;
+  display: inline-block;
+  flex-basis: 250px;
+  max-width: 250px;
+  .card-description {
+    min-height: 80px;
+  }
+}
+.card-content:hover {
+  cursor: pointer;
+}
