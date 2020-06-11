@@ -43,7 +43,7 @@ jobs:
         run: sudo npm install -g @angular/cli angular-cli-ghpages
 
       - name: Build Packages.
-        run: sudo ng build --prod --base-href https://${{ GITHUB_ACTOR }}.github.io/angular-basics/
+        run: sudo ng build --prod --base-href https://$GITHUB_ACTOR.github.io/angular-basics/
 
       - name: Publish code
-        run: sudo ngh --no-silent --name ${{ GITHUB_ACTOR }} --repo git@github.com:santhosh-ztech/angular-basics.git
+        run: sudo ngh --no-silent --name $GITHUB_ACTOR --repo git@github.com:santhosh-ztech/angular-basics.git
