@@ -48,4 +48,6 @@ jobs:
       - name: Publish code to Github Pages
         uses: crazy-max/ghaction-github-pages@v2.0.1
         with:
-          build_dir: dist 
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ GITHUB_TOKEN }}   
