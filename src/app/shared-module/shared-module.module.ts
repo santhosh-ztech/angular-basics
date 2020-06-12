@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { InformationCardComponent } from './components/information-card/information-card.component';
 import { SideMenuHeaderComponent } from './components/side-menu/header/header.component';
 import { SideMenuItemsComponent } from './components/side-menu/items/items.component';
+import { ToastService } from './services/toast-service';
 
 @NgModule({
   imports: [CommonModule, IonicModule, RouterModule],
@@ -26,6 +27,9 @@ import { SideMenuItemsComponent } from './components/side-menu/items/items.compo
     InformationCardComponent,
     SideMenuHeaderComponent,
     SideMenuItemsComponent,
+    // Services
+    ToastService,
   ],
+  providers: [ToastService],
 })
 export class SharedModuleModule {}
