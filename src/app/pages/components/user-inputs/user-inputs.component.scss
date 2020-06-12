@@ -1,0 +1,21 @@
+.information-table {
+  border: 2px solid #e6e6e6;
+  .header {
+    background-color: #e6e6e6;
+    border-bottom: 1px solid #c6c6c6;
+    th {
+      height: 70px;
+      border-left: 1px solid #c6c6c6;
+    }
+  }
+  .content {
+    tr {
+      border-bottom: 1px solid #c6c6c6;
+      td {
+        border-left: 1px solid #c6c6c6;
+        height: 100px;
+        padding: 20px;
+      }
+    }
+  }
+}

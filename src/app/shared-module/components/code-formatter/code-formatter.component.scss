@@ -1,0 +1,17 @@
+.code-formatter {
+  background-color: #fafafa;
+  border: 1px solid #e3e3e3;
+  padding: 15px 5px;
+  position: relative;
+  .copy-icon {
+    position: absolute;
+    top: 10;
+    right: 10px;
+    font-size: 28px;
+    color: #888888;
+  }
+  .copy-icon:hover {
+    color: #444444;
+    cursor: pointer;
+  }
+}

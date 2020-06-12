@@ -17,7 +17,11 @@ export class SideMenuItemsComponent implements OnInit {
       link: '/user-inputs',
     },
   ];
+  selectedMenuItemLabel: string;
   constructor() {}
 
   ngOnInit() {}
+  onSelectedMenuItem(label: string): void {
+    this.selectedMenuItemLabel = label;
+  }
 }

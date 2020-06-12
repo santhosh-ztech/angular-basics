@@ -9,7 +9,7 @@ const routes: Route[] = [
   },
 ];
 @NgModule({
-  declarations: [],
   imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
 export class PageRouteingModule {}

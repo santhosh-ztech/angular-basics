@@ -2,8 +2,10 @@
   <ion-item
     *ngFor="let menuItem of menuItems"
     class="menu-item"
+    [class.selected]="menuItem.label === selectedMenuItemLabel"
     target="{{ menuItem.external ? '_blank' : '_self' }}"
     routerLink="{{ menuItem.link ? menuItem.link : '#' }}"
+    (click)="onSelectedMenuItem(menuItem.label)"
   >
     <ion-label>
       {{ menuItem.label }}

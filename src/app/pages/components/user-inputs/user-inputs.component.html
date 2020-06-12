@@ -1,3 +1,36 @@
-<p>
-  user-inputs works!
-</p>
+<ion-grid class="ion-no-margin">
+  <ion-row>
+    <ion-col>
+      <ion-title class="bold ion-no-padding">Events & User Inputs</ion-title>
+    </ion-col>
+  </ion-row>
+  <hr class="border-bottom" />
+  <ion-row>
+    <ion-col>
+      <table class="information-table">
+        <thead>
+          <tr class="header">
+            <th *ngFor="let title of titles">
+              <ion-title class="bold">{{title}}</ion-title>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="content">
+          <tr *ngFor="let cardInformation of informationCards">
+            <td>
+              <ion-text>{{cardInformation.type}}</ion-text>
+            </td>
+            <td>
+              <app-code-formatter
+                code="{{cardInformation.syntax}}"
+              ></app-code-formatter>
+            </td>
+            <td>
+              <ion-text>{{cardInformation.category}}</ion-text>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </ion-col>
+  </ion-row>
+</ion-grid>

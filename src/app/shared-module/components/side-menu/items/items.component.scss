@@ -4,3 +4,9 @@
     color: #000000;
   }
 }
+
+// Selected Menu Items.
+.menu-item.selected {
+  --background: bisque;
+  --color: black;
+}
